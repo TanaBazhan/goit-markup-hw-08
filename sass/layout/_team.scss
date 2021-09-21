@@ -1,0 +1,108 @@
+.team-section {
+  background-color: #F5F4FA;
+display: flex;
+}
+.team-list {
+  display: flex;
+  justify-content: space-between;
+}
+.team-title {
+font-weight: bold;
+font-size: 36px;
+line-height: 1.17;
+text-align: center;
+letter-spacing: 0.03em;
+
+color: var(--secondary-title-color);
+margin-bottom: 50px;
+}
+.team-item {
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+border-radius: 0px 0px 4px 4px;
+background-color: #FFFFFF;
+}
+.team-name-container {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  align-content: center;
+}
+.team-name {
+  font-weight: 500;
+font-size: 16px;
+line-height: 1.19;
+text-align: center;
+letter-spacing: 0.03em;
+
+color: var(--secondary-title-color);
+margin-bottom: 10px;
+}
+.team-position {
+  font-size: 16px;
+line-height: 1.19;
+text-align: center;
+letter-spacing: 0.03em;
+
+color: var(--main-text-color);
+}
+.icon-list {
+  display: flex;
+  width: 206px;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+  margin-left: 32px;
+}
+.icon-group:hover,
+.icon-group:focus {
+color: var(--main-title-color);
+background-color: var(--accent-color);
+}
+.icon-group {
+  display: flex;
+  color: #AFB1B8;
+  width: 44px;
+  height: 44px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.group {
+  fill: currentColor;
+}
+.container-customers {
+justify-content: center;
+align-items: flex-start;
+}
+.customers-tittle {
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+
+color: var(--secondary-title-color);
+margin-bottom: 50px;
+}
+.customers-list {
+  display: flex;
+  justify-content: space-around;
+}
+.icon-group-customers:focus,
+.icon-group-customers:hover {
+  color: var(--accent-color);
+  border: 1px solid var(--accent-color);
+}
+.icon-group-customers {
+  display: flex;
+  color: #AFB1B8;
+  width: 170px;
+  height: 92px;
+  border: 1px solid #AFB1B8;
+  justify-content: center;
+  align-items: center;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.group {
+  fill: currentColor;
+}
