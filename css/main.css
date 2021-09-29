@@ -43,7 +43,7 @@ section {
 }
 
 .container {
-  width: 1200px;
+  width: 100%;
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
@@ -169,6 +169,13 @@ section {
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/fon-min.jpg);
 }
 
+@media screen and (max-width: 480px) {
+  .hero {
+    padding-top: 118px;
+    padding-bottom: 198px;
+  }
+}
+
 .hero__container {
   display: flex;
   flex-direction: column;
@@ -186,6 +193,18 @@ section {
   color: var(--main-title-color);
   width: 696px;
   height: 120px;
+}
+
+@media screen and (max-width: 480px) {
+  .hero__title {
+    font-size: 26px;
+    line-height: 1.62;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    width: 360px;
+    height: 84px;
+  }
 }
 
 .hero__button {
