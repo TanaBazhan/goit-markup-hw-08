@@ -6,6 +6,20 @@ padding-bottom: 60px;
 }
 .contacts-container {
   display: flex;   
+  @media screen and (min-width: 480px) {
+    display: flex;
+   flex-direction: column;
+   align-items: center;
+   align-content: center;
+   justify-content: space-between;
+  }
+  @media screen and (min-width: 768px) {
+    display: flex;
+    
+  }
+    @media screen and (min-width: 1200px)  {
+      display: flex;
+    }
 }
 .container-footer{
   flex-direction: column;
@@ -54,6 +68,24 @@ span {
   flex-direction: column;
   width: 206px;
   margin-left: 70px;
+  @media screen and (min-width: 480px) {
+    display: flex;
+   margin-left: 0;
+   align-items: center;
+   align-content: center;
+   position: absolute;
+   bottom: 200px;
+  }
+  @media screen and (min-width: 768px) {
+    display: flex;
+    
+  }
+    @media screen and (min-width: 1200px)  {
+      display: flex;
+      flex-direction: column;
+      width: 206px;
+      margin-left: 70px;
+    }
 }
 .name-footer {
   display: flex;
@@ -99,10 +131,38 @@ span {
   display: inline-block;
   margin-right: 0; 
   margin-left: auto;
+  @media screen and (min-width: 480px) {
+    display: flex;
+   margin-left: 0;
+   margin-right: auto;
+   flex-direction: column;
+   align-items: center;
+   align-content: center;
+  }
+  @media screen and (min-width: 768px) {
+    display: flex;
+    
+  }
+    @media screen and (min-width: 1200px)  {
+      display: inline-block;
+  margin-right: 0; 
+  margin-left: auto;
+    }
 }
 .footer-form-container {
   display: flex;
   flex-direction: row;
+  @media screen and (min-width: 480px) {
+    display: flex;
+   flex-direction: column;
+   align-items: center;
+   align-content: center;
+   
+  }
+  @media screen and (min-width: 1200px) {
+    display: flex;
+  flex-direction: row;
+  }
 
 }
 .footer-email {
@@ -122,6 +182,29 @@ align-items: center;
 letter-spacing: 0.03em;
 
 color: rgba(255, 255, 255, 0.6);
+@media screen and (min-width: 480px) {
+  display: flex;
+ margin-left: 0;
+ margin-right: auto;
+ flex-direction: column;
+}
+@media screen and (min-width: 768px) {
+  display: flex;
+  width: 100%;
+  margin-top: 20px;
+}
+  @media screen and (min-width: 1200px)  {
+    display: flex;
+align-items: center;
+  }
+}
+.footer-form-container {
+display: flex;
+flex-direction: row;
+@media screen and (min-width: 480px) {
+  display: flex;
+ flex-direction: column;
+}
 }
 .footer-btn {
   height: 50px;
@@ -139,6 +222,11 @@ letter-spacing: 0.06em;
 color: #FFFFFF;
 margin-left: 12px;
 border: none;
+@media screen and (min-width: 480px) {
+  display: flex;
+  margin-left: 0px;
+  margin-top: 20px;
+}
 }
 .icon-icon-send {
   fill: var(--main-title-color);

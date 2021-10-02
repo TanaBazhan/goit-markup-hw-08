@@ -60,7 +60,6 @@
   color: var(--accent-color);
   }
   .header__link {
-    
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
   .active::after {
@@ -112,26 +111,34 @@
     .menu-open {
       background-color:#FFFFFF ;
       border: none;
-      display: block;        
+      display: block;
+      
     }
     .menu-open:hover .icon-menu,
     .menu-open:hover .icon-menu {
       fill: var(--accent-color);
     }
    .mob-menu {
+     display: flex;
      position: absolute;
      width: 100vw;
     height: 100vh;
     background-color: #FFFFFF;
+    justify-content: space-between;
+    flex-direction: column;
+    padding-top: 48px;
+    padding-bottom: 48px;
+    padding-left: 40px;
    } 
    .mob-menu__item {
      display: flex;
     
    }
    .mob-menu__close {
+     position: absolute;
      display: block;
-     margin-right: 15px;
-     margin-left: auto;
+     right: 15px;
+     top: 10px;
      background-color: #FFFFFF;
      border: none;
    }
@@ -149,7 +156,6 @@
   }
   .mob-menu__list {
     display: block;
-    margin-left: 40px;
   }
   .mob-menu__link {
     font-weight: 500;
@@ -162,9 +168,9 @@
   }
   .mob-menu__nav {
     display: flex;
-    flex-direction: column-reverse;
-    margin-left: 40px;
-    margin-bottom: 48px;
+    flex-direction: column-reverse;  
+    position: absolute;
+    bottom: 134px;  
   }
   .mob-menu__tel {
     font-weight: 500;
@@ -173,21 +179,20 @@ line-height: 1.18;
 
 letter-spacing: 0.02em;
 color: var(--accent-color);
-margin-bottom: calc(100%/6.25);
+margin-bottom: 32px;
+margin-top: auto;
   }
   .mob-menu__mail {
     font-weight: 500;
 font-size: 24px;
-line-height: 28px;
+line-height: 1.17;
 letter-spacing: 0.02em;
 
 color: #757575;
-margin-bottom: calc(100%/12.5);
   }
   .mob-menu-site__list {
     display: flex;
     flex-direction: row;
-    margin-left: 40px;
   }
 
   .mob-menu-site__item:not(:last-child) {
@@ -195,8 +200,9 @@ margin-bottom: calc(100%/12.5);
     padding-right: 10px;
   }
   .mob-menu-site__item {
+    display: block;
     position: relative;
-    
+   
   }
   .mob-menu-site__link {
     font-weight: 500;

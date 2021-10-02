@@ -16,39 +16,75 @@
 <body>
         <!--page header-->
         <header class="header">
-          <!-- Main navigation -->
-  <div class="container">
-  <nav class="header-navigation">
-      <a class="header__logo link" lang="en" href="./index.html"><span>Web</span>Studio</a>
-      <div class="main-navigation">
-      <ul class="header__list list">
-          <li class="header__item">
-             <a class="header__link link  " href="./index.html">Студия</a>  
-          </li>
-          <li class="header__item">
-              <a class="header__link link active" href="./portfolio.html">Портфолио</a> 
-          </li>
-          <li class="header__item">
-              <a class="header__link link" href="">Контакты</a> 
-          </li>
-      </ul>
-      </div>
-  </nav>
-  <div class="header__right">
-      <a class="header__mail header__link link" href="mailgo:info@devstudio.com">
-          <svg class="icon-mail" width="16" height="12">
-              <use href="./img/sprite.svg#icon-envelope-hover">
+          <div class="container">
+          <nav class="header-navigation">
+              <a class="header__logo link" lang="en" href="./index.html"><span>Web</span>Studio</a>
+              <div class="main-navigation">
+              <ul class="header__list list">
+                  <li class="header__item">
+                     <a class="header__link link active " href="./index.html">Студия</a>  
+                  </li>
+                  <li class="header__item">
+                      <a class="header__link link" href="./portfolio.html">Портфолио</a> 
+                  </li>
+                  <li class="header__item">
+                      <a class="header__link link" href="">Контакты</a> 
+                  </li>
+              </ul>
+              </div>
+          </nav>
+          <div class="header__right">
+              <a class="header__mail header__link link" href="mailgo:info@devstudio.com">
+                  <svg class="icon-mail" width="16" height="12">
+                      <use href="./img/sprite.svg#icon-envelope-hover">
+                      </use>
+                  </svg>
+                  info@devstudio.com</a>
+              <a class="header__tel header__link link" href="tell:+380961111111">
+                  <svg class="icon-tel" width="10" height="16">
+                      <use href="./img/sprite.svg#icon-smartphone">
+                      </use>
+                  </svg> +38096 111 11 11</a>
+          </div> 
+          <button class="menu-open" data-menu-open>
+              <svg class="icon-menu" width="24" height="16">
+              <use href="./img/sprite.svg#icon-menu">
               </use>
           </svg>
-          info@devstudio.com</a>
-      <a class="header__tel header__link link" href="tell:+380961111111">
-          <svg class="icon-tel" width="10" height="16">
-              <use href="./img/sprite.svg#icon-smartphone">
-              </use>
-          </svg> +38096 111 11 11</a>
-  </div>
-  </div>
-</header>
+          </button>
+          </div>
+          <div class="mob-menu is-hidden" data-menu >
+              <button class="mob-menu__close" data-menu-close>
+                  <svg class="icon-close" width="24" height="16">
+                      <use href="./img/sprite.svg#icon-close">
+                      </use>
+                  </svg>
+              </button>
+              <ul class="mob-menu__list list">
+                  <li class="mob-menu__item">
+                     <a class="mob-menu__link link active " href="./index.html">Студия</a>  
+                  </li>
+                  <li class="mob-menu__item">
+                      <a class="mob-menu__link link" href="./portfolio.html">Портфолио</a> 
+                  </li>
+                  <li class="mob-menu__item">
+                      <a class="mob-menu__link link" href="">Контакты</a> 
+                  </li>
+              </ul>
+              <div class="mob-menu__nav">
+                  <a class="mob-menu__mail header__link link" href="mailgo:info@devstudio.com">
+                      info@devstudio.com</a>
+                  <a class="mob-menu__tel header__link link" href="tell:+380961111111">
+                       +38096 111 11 11</a>
+              </div> 
+              <ul class="mob-menu-site__list list">
+                  <li class="mob-menu-site__item"> <a href="https://www.instagram.com" class="mob-menu-site__link link">Instagram</a> </li>
+                  <li class="mob-menu-site__item"><a href="https://www.twitter.com" class="mob-menu-site__link link">Twitter</a></li>
+                  <li class="mob-menu-site__item"><a href="https://www.facebook.com" class="mob-menu-site__link link">Facebook</a></li>
+                  <li class="mob-menu-site__item"><a href="https://www.linkedin.com" class="mob-menu-site__link link">Linkedin</a></li>
+              </ul>
+          </div>
+      </header>
         <!-- unique page content -->
     <main>
       <!-- hero -->
@@ -67,7 +103,7 @@
               <li class="our-products-item"> 
                 <div class="product-container">
                   <picture>
-                    <source srcset="./image/img13x1-min.jpg 1x, ./image/img13x2-min.jpg 2x " media="(min-width=480px)" >
+                    <source srcset="./image/img13x1-min.jpg 1x, ./image/img13x2-min.jpg 2x " media="(min-width:480px)" >
                     <source srcset="./image/img13x1-min.jpg 1x, ./image/img13x2-min.jpg 2x " media="(min-width:768px)" >
                     <img src="./img/img02-min.jpg" alt="На экране ноута изображен сайт" width="370" height="294">
                 </picture>
@@ -82,7 +118,7 @@
               </li>
               <li class="our-products-item">
                 <picture>
-                  <source srcset="./image/img12x1-min.jpg 1x, ./image/img12x2-min.jpg 2x " media="(min-width=480px)" >
+                  <source srcset="./image/img12x1-min.jpg 1x, ./image/img12x2-min.jpg 2x " media="(min-width:480px)" >
                   <source srcset="./image/img12x1-min.jpg 1x, ./image/img12x2-min.jpg 2x " media="(min-width:768px)" >
                   <img src="./img/img03-min.jpg" alt="Два баскетболиста в борьбе за мяч" width="370" height="294">
               </picture>
@@ -93,7 +129,7 @@
               </li>
               <li class="our-products-item">
                 <picture>
-                  <source srcset="./image/img11x1-min.jpg 1x, ./image/img11x2-min.jpg 2x " media="(min-width=480px)" >
+                  <source srcset="./image/img11x1-min.jpg 1x, ./image/img11x2-min.jpg 2x " media="(min-width:480px)" >
                   <source srcset="./image/img11x1-min.jpg 1x, ./image/img11x2-min.jpg 2x " media="(min-width:768px)" >
                   <img src="./img/img04-min.jpg" alt="Логотип ресторана" Width="370" Height="294">
               </picture>
@@ -104,7 +140,7 @@
               </li>
               <li class="our-products-item">
                 <picture>
-                  <source srcset="./image/img10x1-min.jpg 1x, ./image/img10x2-min.jpg 2x " media="(min-width=480px)" >
+                  <source srcset="./image/img10x1-min.jpg 1x, ./image/img10x2-min.jpg 2x " media="(min-width:480px)" >
                   <source srcset="./image/img10x1-min.jpg 1x, ./image/img10x2-min.jpg 2x " media="(min-width:768px)" >
                   <img src="./img/img05-min.jpg" alt="Наушники" width="370" height="294">
               </picture>
@@ -115,7 +151,7 @@
               </li>
               <li class="our-products-item">
                 <picture>
-                  <source srcset="./image/img9x1-min.jpg 1x, ./image/img9x2-min.jpg 2x " media="(min-width=480px)" >
+                  <source srcset="./image/img9x1-min.jpg 1x, ./image/img9x2-min.jpg 2x " media="(min-width:480px)" >
                   <source srcset="./image/img9x1-min.jpg 1x, ./image/img9x2-min.jpg 2x " media="(min-width:768px)" >
                   <img src="./img/img06-min.jpg" alt="Белая и коричневая коробки" width="370" height="294">
               </picture>
@@ -126,7 +162,7 @@
               </li>
               <li class="our-products-item">
                 <picture>
-                  <source srcset="./image/img8x1-min.jpg 1x, ./image/img8x2-min.jpg 2x " media="(min-width=480px)" >
+                  <source srcset="./image/img8x1-min.jpg 1x, ./image/img8x2-min.jpg 2x " media="(min-width:480px)" >
                   <source srcset="./image/img8x1-min.jpg 1x, ./image/img8x2-min.jpg 2x " media="(min-width:768px)" >
                   <img src="./img/img07-min.jpg" alt="Монитор" width="370" height="294">
               </picture>
@@ -137,7 +173,7 @@
               </li>
               <li class="our-products-item">
                 <picture>
-                  <source srcset="./image/img7x1-min.jpg 1x, ./image/img7x2-min.jpg 2x " media="(min-width=480px)" >
+                  <source srcset="./image/img7x1-min.jpg 1x, ./image/img7x2-min.jpg 2x " media="(min-width:480px)" >
                   <source srcset="./image/img7x1-min.jpg 1x, ./image/img7x2-min.jpg 2x " media="(min-width:768px)" >
                   <img src="./img/img08-min.jpg" alt="Книга" width="370" height="294">
               </picture>
@@ -148,7 +184,7 @@
               </li>
               <li class="our-products-item">
                 <picture>
-                  <source srcset="./image/img6x1-min.jpg 1x, ./image/img6x2-min.jpg 2x " media="(min-width=480px)" >
+                  <source srcset="./image/img6x1-min.jpg 1x, ./image/img6x2-min.jpg 2x " media="(min-width:480px)" >
                   <source srcset="./image/img6x1-min.jpg 1x, ./image/img6x2-min.jpg 2x " media="(min-width:768px)" >
                   <img src="./img/img09-min.jpg" alt="Ярлык" width="370" height="294">
               </picture>
@@ -159,7 +195,7 @@
               </li>
               <li class="our-products-item">
                 <picture>
-                  <source srcset="./image/img5x1-min.jpg 1x, ./image/img5x2-min.jpg 2x " media="(min-width=480px)" >
+                  <source srcset="./image/img5x1-min.jpg 1x, ./image/img5x2-min.jpg 2x " media="(min-width:480px)" >
                   <source srcset="./image/img5x1-min.jpg 1x, ./image/img5x2-min.jpg 2x " media="(min-width:768px)" >
                   <source srcset="./image/img5x1-min.jpg 1x, ./image/img5x2-min.jpg 2x " media="(min-width:1200px)" >
                   <img src="./img/img01-min.jpg" alt="Руки набирают текст на ноуте" width="370" height="294">
