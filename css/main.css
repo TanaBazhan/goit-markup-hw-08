@@ -51,7 +51,7 @@ section {
 
 @media screen and (min-width: 480px) {
   .container {
-    max-width: 480px;
+    max-width: 448px;
   }
 }
 
@@ -228,7 +228,6 @@ section {
 
 .mob-menu__list {
   display: block;
-  margin-bottom: 302px;
   margin-left: 40px;
 }
 
@@ -245,6 +244,7 @@ section {
   display: flex;
   flex-direction: column-reverse;
   margin-left: 40px;
+  margin-bottom: 48px;
 }
 
 .mob-menu__tel {
@@ -253,7 +253,7 @@ section {
   line-height: 1.18;
   letter-spacing: 0.02em;
   color: var(--accent-color);
-  margin-bottom: 32px;
+  margin-bottom: calc(100%/6.25);
 }
 
 .mob-menu__mail {
@@ -262,7 +262,7 @@ section {
   line-height: 28px;
   letter-spacing: 0.02em;
   color: #757575;
-  margin-bottom: 64px;
+  margin-bottom: calc(100%/12.5);
 }
 
 .mob-menu-site__list {
