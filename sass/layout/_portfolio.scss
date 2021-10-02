@@ -32,8 +32,13 @@
   flex-direction: column;
   padding: 6px 22px;
   border-radius: 4px;
+  flex-wrap: wrap;
   border: none;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  @media screen and (min-width:480) {
+    
+    
+  }
   }
   .our-products-list {
     display: flex;

@@ -15,7 +15,7 @@
 </head>
 <body>
         <!--page header-->
-    <!-- <header class="header">
+     <header class="header">
         <div class="container">
         <nav class="header-navigation">
             <a class="header__logo link" lang="en" href="./index.html"><span>Web</span>Studio</a>
@@ -45,11 +45,47 @@
                     <use href="./img/sprite.svg#icon-smartphone">
                     </use>
                 </svg> +38096 111 11 11</a>
+        </div> 
+        <button class="menu-open" data-menu-open>
+            <svg class="icon-menu" width="24" height="16">
+            <use href="./img/sprite.svg#icon-menu">
+            </use>
+        </svg>
+        </button>
         </div>
+        <div class="mob-menu is-hidden" data-menu >
+            <button class="mob-menu__close" data-menu-close>
+                <svg class="icon-close" width="24" height="16">
+                    <use href="./img/sprite.svg#icon-close">
+                    </use>
+                </svg>
+            </button>
+            <ul class="mob-menu__list list">
+                <li class="mob-menu__item">
+                   <a class="mob-menu__link link active " href="./index.html">Студия</a>  
+                </li>
+                <li class="mob-menu__item">
+                    <a class="mob-menu__link link" href="./portfolio.html">Портфолио</a> 
+                </li>
+                <li class="mob-menu__item">
+                    <a class="mob-menu__link link" href="">Контакты</a> 
+                </li>
+            </ul>
+            <div class="mob-menu__nav">
+                <a class="mob-menu__mail header__link link" href="mailgo:info@devstudio.com">
+                    info@devstudio.com</a>
+                <a class="mob-menu__tel header__link link" href="tell:+380961111111">
+                     +38096 111 11 11</a>
+            </div> 
+            <ul class="mob-menu-site__list list">
+                <li class="mob-menu-site__item"> <a href="https://www.instagram.com" class="mob-menu-site__link link">Instagram</a> </li>
+                <li class="mob-menu-site__item"><a href="https://www.twitter.com" class="mob-menu-site__link link">Twitter</a></li>
+                <li class="mob-menu-site__item"><a href="https://www.facebook.com" class="mob-menu-site__link link">Facebook</a></li>
+                <li class="mob-menu-site__item"><a href="https://www.linkedin.com" class="mob-menu-site__link link">Linkedin</a></li>
+            </ul>
         </div>
-    </header> -->
+    </header>
         <!-- unique page content -->
-    <main>
         <!-- hero -->
         <section class="hero">
             <div class="container hero__container">
@@ -110,15 +146,31 @@
             <h2 class="images-title">Чем мы занимаемся</h2>
             <ul class="images-list list">
                 <li class="images-item">
-                    <img src="./img/img1-min.jpg" alt="Блок схема і процес написання коду" Width="370" Height="294">
+                    <picture>
+                        <source srcset="./image/img5x1-min.jpg 1x, ./image/img5x2-min.jpg 2x " media="(min-width=480px)" >
+                        <source srcset="./image/img5x1-min.jpg 1x, ./image/img5x2-min.jpg 2x " media="(min-width:768px)" >
+                        <source srcset="./image/img5x1-min.jpg 1x, ./image/img5x2-min.jpg 2x " media="(min-width:1200px)" >
+                     <img src="./img/img1-min.jpg" alt="Блок схема і процес написання коду" Width="370" Height="294">
+                    </picture>
                     <p class="images-text">Десктопные приложения</p>
                 </li>
                 <li class="images-item">
-                    <img src="./img/img2-min.jpg" alt="Смартфон підключений до ноутбука" Width="370" Height="294">
+                    <picture>
+                        <source srcset="./image/img5x1-min.jpg 1x, ./image/img5x2-min.jpg 2x " media="(min-width:480px)" >
+                        <source srcset="./image/img5x1-min.jpg 1x, ./image/img5x2-min.jpg 2x " media="(min-width:768px)" >
+                        <source srcset="./image/img5x1-min.jpg 1x, ./image/img5x2-min.jpg 2x " media="(min-width:1200px)" >
+                        <img src="./img/img2-min.jpg" alt="Смартфон підключений до ноутбука" Width="370" Height="294">
+                    </picture>
+                    
                     <p class="images-text">Мобильные приложения</p>
                 </li>
                 <li class="images-item">
-                    <img src="./img/img3-min.jpg" alt="Кольорова палітра на планшеті" Width="370" Height="294">
+                    <picture>
+                        <source srcset="./image/img5x1-min.jpg 1x, ./image/img5x2-min.jpg 2x " media="(min-width:480px)" >
+                        <source srcset="./image/img5x1-min.jpg 1x, ./image/img5x2-min.jpg 2x " media="(min-width:768px)" >
+                        <source srcset="./image/img5x1-min.jpg 1x, ./image/img5x2-min.jpg 2x " media="(min-width:1200px)" >
+                        <img src="./img/img3-min.jpg" alt="Кольорова палітра на планшеті" Width="370" Height="294">
+                    </picture>
                     <p class="images-text">Дизайнерские решения</p>
                 </li>
             </ul>
@@ -423,5 +475,6 @@
         </div>
     </div> 
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
 </body>
 </html>
