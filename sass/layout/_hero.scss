@@ -2,12 +2,12 @@
   display: flex;
   padding-top: 200px;
   padding-bottom: 200px;
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),  url(../img/fon-min.jpg);
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),  url();
   @media screen and (min-width: 480px) {
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),  url(../img/fon-min.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),  url(../img/herox1-min.jpg);
   }
   @media screen and (min-width: 768px) {
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),  url(../img/fon-min.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),  url(../img/herox2-min.jpg);
   }
   @media screen and (min-width: 1200px){
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),  url(../img/fon-min.jpg);
@@ -27,8 +27,7 @@ text-align: center;
 letter-spacing: 0.06em;
 text-transform: uppercase;
 color: var(--main-title-color);
-width: 696px;
-height: 120px;
+
 @media screen and (min-width: 480px) {
   font-size: 26px;
   line-height: 1.62;
@@ -55,6 +54,8 @@ height: 84px;
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
+  width: 696px;
+height: 120px;
 }
 }
 .hero__button {
