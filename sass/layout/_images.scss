@@ -1,16 +1,29 @@
 .images {
-  display: flex;
+  @media screen and (min-width: 480px)  {
+    display: none;
+  }
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+  @media screen and (min-width: 1200px) {
+ display: flex;
   padding-top: 0px;
 }
+}
 .images-list {
+  @media screen and (min-width: 1200px) {
   display: flex;
   justify-content: space-between;
 }
+}
 .images-item {
-  position: relative;
+  @media screen and (min-width: 1200px) {
+ position: relative;
   display: flex;
 }
+}
 .images-text { 
+@media screen and (min-width: 1200px) {
 position: absolute;
 font-weight: bold;
 font-size: 14px;
@@ -25,8 +38,11 @@ padding-top: 27px ;
 padding-bottom: 27px;
 bottom: 0;
 }
+
+}
 .images-title {
-  font-weight: bold;
+  @media screen and (min-width: 1200px) {
+ font-weight: bold;
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
@@ -34,4 +50,5 @@ bottom: 0;
   
   color: var(--secondary-title-color);
   margin-bottom: 52px;
+}
 }

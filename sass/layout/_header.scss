@@ -6,6 +6,7 @@
   
   } 
   .header .container {
+    position: relative;
     display: flex;
     align-items: center;
     width: 100%;
@@ -13,12 +14,6 @@
     padding-left: 40px;
   }
   .header-navigation {
-    @media screen and (min-width: 480px)  {
-      display: none;
-    }
-    @media screen and (min-width: 768px) {
-      display: none;
-    }
     @media screen and (min-width: 1200px) {display: flex;
     align-items: center;
   }
@@ -198,7 +193,7 @@
     }
    .mob-menu {
      display: flex;
-     position: absolute;
+     position: fixed;
      width: 100vw;
     height: 100vh;
     background-color: #FFFFFF;
