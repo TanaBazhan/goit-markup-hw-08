@@ -448,7 +448,7 @@ section {
 
 @media screen and (min-width: 480px) {
   .hero {
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../image/herox1-min.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../image/theader1x-min.jpg) x1, url(../image/theader1x-min.jpg) x2;
     background-size: 100%;
     padding-top: 118px;
     padding-bottom: 118px;
@@ -457,7 +457,7 @@ section {
 
 @media screen and (min-width: 768px) {
   .hero {
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../image/herox2-min.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../image/header1x-min.jpg) x1, url(../image/header1x-min.jpg) x2;
     background-size: 100%;
     padding-top: 118px;
     padding-bottom: 118px;
