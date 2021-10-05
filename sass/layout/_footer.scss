@@ -33,13 +33,17 @@ padding-bottom: 60px;
     display: flex;
    justify-content: center;
    align-items: center;
-   margin-bottom: 60px;
+   
   }
   @media screen and (min-width: 768px) {
     display: flex;
    justify-content: center;
    align-items: center;
-   margin-left: 76px;
+  
+  }
+  @media screen and (min-width: 1200px) {
+    display: flex;
+   align-items: flex-start;
   }
 }
 .contacts-address {
