@@ -1161,9 +1161,8 @@ section {
     text-align: center;
     letter-spacing: 0.03em;
     color: #212121;
-    justify-content: center;
-    align-items: center;
     margin-bottom: 50px;
+    transform: translateX(50%);
   }
 }
 
@@ -1178,6 +1177,7 @@ section {
     justify-content: center;
     align-items: center;
     color: #212121;
+    transform: translateX(0%);
     margin-bottom: 50px;
   }
 }
