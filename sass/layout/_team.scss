@@ -2,12 +2,20 @@
   background-color: #F5F4FA;
 display: flex;
 }
+.team-container {
+  display: block;
+  height: 100%;
+  justify-content: center;
+}
 .team-list {
   display: flex;
-  justify-content: space-between;
+  
   @media screen and (min-width:480px) {
+    display: flex;
+    
     flex-direction: column;
     width: 100%;
+    margin-top: 30px;
   }
   @media screen and (min-width: 768px) {
     display: flex;
@@ -22,26 +30,31 @@ display: flex;
 }
 .team-title {
 @media screen and (min-width:480px) {
+  display: inline-block;
   font-weight: bold;
 font-size: 28px;
 line-height: 1.18px;
 text-align: center;
 letter-spacing: 0.03em;
-
 color: #212121;
-margin-bottom: 30px;
+justify-content: center;
+ align-items: center;
+ margin-bottom: 50px;
 }
 @media screen and (min-width: 768px) {
+  display: block;
   font-weight: bold;
   font-size: 28px;
   line-height: 1.18px;
   text-align: center;
   letter-spacing: 0.03em;
-  
+ justify-content: center;
+ align-items: center;
   color: #212121;
-  margin-bottom: 30px;
+  margin-bottom: 50px;
 }
   @media screen and (min-width: 1200px)  {
+    display: block;
     font-weight: bold;
 font-size: 36px;
 line-height: 1.17;
@@ -82,6 +95,16 @@ background-color: #FFFFFF;
   @media screen and (min-width:480px) {
      margin-bottom: 30px;
   }
+}
+.team-item:not(:nth-child(2n)) {
+  @media screen and (min-width: 768px) {
+  margin-right: 30px;
+}
+}
+.team-item:not(:last-child) {
+  @media screen and (min-width:1200px) {
+  margin-right: 30px;
+}
 }
 .team-name-container {
   padding-top: 30px;

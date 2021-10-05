@@ -9,8 +9,8 @@
     letter-spacing: 0.03em;
   
   color: var(--secondary-title-color);
-  margin-bottom: 50px;
   @media screen and (min-width:480px) {
+    display: inline-block;
     font-weight: bold;
   font-size: 28px;
   line-height: 1.18px;
@@ -18,9 +18,11 @@
   letter-spacing: 0.03em;
   
   color: #212121;
-  margin-bottom: 30px;
+  margin-bottom: 50px;
+  margin-left: 80px;
   }
   @media screen and (min-width: 768px) {
+    display: block;
     font-weight: bold;
     font-size: 28px;
     line-height: 1.18px;
@@ -31,6 +33,7 @@
     margin-bottom: 30px;
   }
     @media screen and (min-width: 1200px)  {
+      display: block;
       font-weight: bold;
   font-size: 36px;
   line-height: 1.17;

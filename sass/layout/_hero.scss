@@ -1,7 +1,7 @@
 .hero {
   display: flex;
   @media screen and (min-width: 480px) {
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),  url( ../img/theader1x-min.jpg) 1x, url(../img/theader1x-min.jpg) 2x;
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),  url( ../img/theader1x-min.jpg) , url(../img/theader1x-min.jpg) ;
     background-size: 100%;
     padding-top: 118px;
   padding-bottom: 118px;

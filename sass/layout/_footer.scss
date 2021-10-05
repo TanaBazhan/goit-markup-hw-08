@@ -16,15 +16,17 @@ padding-bottom: 60px;
     justify-content: space-between;
     flex-direction: row;
     flex-wrap: wrap;
-
+    align-items: flex-start;
+    padding-left: 60px;
+    padding-right: 60px;
   }
     @media screen and (min-width: 1200px)  {
       display: flex;
-       justify-content: space-between;
     flex-direction: row;
     height: 50%;
     flex-wrap: nowrap;
-    margin-left: 0;
+    padding-left: 15px;
+    padding-right: 15px;
     }
 }
 .container-footer{
@@ -34,6 +36,7 @@ padding-bottom: 60px;
     display: flex;
    justify-content: center;
    align-items: center;
+   margin-bottom: 60px;
   }
   @media screen and (min-width: 768px) {
     display: flex;
@@ -43,17 +46,20 @@ padding-bottom: 60px;
   }
   @media screen and (min-width: 1200px) {
     display: flex;
-    margin-left: 0;
+    justify-content: left;
+    align-items: flex-start;
+    margin-right: 60px;
   }
 }
 .contacts-address {
+  display: block;
   font-style: normal;
   font-size: 14px;
 line-height: 1.71;
 letter-spacing: 0.03em;
 
 color: var(--main-title-color);
-
+width: 232px;
 }
 .contacts-items:not(:last-child) {
   margin-bottom: 9px;
@@ -68,10 +74,22 @@ color: var(--main-title-color);
 .contacts-list {
   display: flex;
   flex-direction: column;
+  @media screen and (min-width: 480px) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+   }
   @media screen and (min-width: 768px) {
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 100%;
+   }
+   @media screen and (min-width: 1200px) {
+    display: flex;
+    justify-content: left;
+    align-items: flex-start;
     width: 100%;
    }
 }
@@ -110,14 +128,13 @@ span {
    align-items: center;
    align-content: center;
   flex-direction: column;
+  margin-bottom: 60px;
   
   }
   @media screen and (min-width: 768px) {
     display: flex;
     flex-direction: column;
     width: 206px;
-  
-    
   }
     @media screen and (min-width: 1200px)  {
       display: flex;
@@ -187,6 +204,9 @@ span {
   margin-left: auto;
   margin-top: 12px;
   margin-bottom: auto;
+  margin-left: auto;
+  margin-right: 0;
+  width: 570px;
     }
 }
 .footer-form-container {
@@ -210,8 +230,7 @@ span {
     display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
-  margin-left: auto;
-  margin-right: 0;
+  
   }
 
 }
