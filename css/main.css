@@ -257,27 +257,9 @@ section {
   }
 }
 
-@media screen and (min-width: 480px) {
-  .icon-tel,
-  .icon-mail {
-    display: none;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .icon-tel,
-  .icon-mail {
-    display: block;
-    fill: currentColor;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .icon-tel,
-  .icon-mail {
-    fill: currentColor;
-    display: block;
-  }
+.icon-tel,
+.icon-mail {
+  fill: currentColor;
 }
 
 @media screen and (min-width: 480px) {
@@ -1176,6 +1158,7 @@ section {
   display: flex;
   height: 100%;
   justify-content: center;
+  flex-direction: column;
 }
 
 .team-list {

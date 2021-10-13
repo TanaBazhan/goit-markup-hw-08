@@ -151,19 +151,10 @@
   
   .icon-tel,
   .icon-mail {
-    @media screen and (min-width: 480px)  {
-      display: none;
-    }
-    @media screen and (min-width: 768px) {
-      display: block;
+  
       fill: currentColor;
     }
-    @media screen and (min-width: 1200px) {
-    fill: currentColor;
-    display: block;
-  }
-    
-  }
+
   .header__tel {
     @media screen and (min-width: 480px)  {
       display: none;
