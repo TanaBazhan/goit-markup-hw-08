@@ -245,7 +245,6 @@ section {
   .header__right {
     margin-left: auto;
     display: flex;
-    align-items: center;
     flex-direction: column;
   }
 }
@@ -254,7 +253,7 @@ section {
   .header__right {
     margin-left: auto;
     display: flex;
-    align-items: center;
+    flex-direction: row;
   }
 }
 
@@ -511,6 +510,7 @@ section {
   .hero {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/header1x-min.jpg) 1x, url(../img/header1x-min.jpg) 2x;
     background-size: 100%;
+    background-repeat: no-repeat;
     padding-top: 118px;
     padding-bottom: 118px;
   }
@@ -998,7 +998,7 @@ section {
     text-transform: uppercase;
     color: var(--secondary-title-color);
     margin-bottom: 10px;
-    text-align: left;
+    text-align: center;
   }
 }
 
@@ -1167,10 +1167,11 @@ section {
 .team-section {
   background-color: #F5F4FA;
   display: flex;
+  padding-top: 0;
 }
 
 .team-container {
-  display: block;
+  display: flex;
   height: 100%;
   justify-content: center;
 }
