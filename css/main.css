@@ -82,6 +82,7 @@ section {
   width: 100%;
   justify-content: space-between;
   padding-left: 40px;
+  margin-right: 0;
 }
 
 @media screen and (min-width: 768px) {
@@ -245,6 +246,7 @@ section {
   .header__right {
     margin-left: auto;
     display: flex;
+    margin-bottom: 0;
     flex-direction: column;
   }
 }
@@ -253,6 +255,7 @@ section {
   .header__right {
     margin-left: auto;
     display: flex;
+    margin-right: 0;
     flex-direction: row;
   }
 }
@@ -327,6 +330,7 @@ section {
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
+    margin-bottom: 0;
     color: var(--main-text-color);
     width: 161px;
     justify-content: space-between;
@@ -487,13 +491,17 @@ section {
     background-size: 100%;
     padding-top: 118px;
     padding-bottom: 118px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
   }
 }
 
 @media screen and (min-width: 768px) {
   .hero {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/header1x-min.jpg) 1x, url(../img/header1x-min.jpg) 2x;
-    background-size: 100%;
+    background-size: cover;
+    background-position: center;
     background-repeat: no-repeat;
     padding-top: 118px;
     padding-bottom: 118px;
@@ -505,6 +513,9 @@ section {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/fon-min.jpg);
     padding-top: 200px;
     padding-bottom: 200px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
   }
 }
 
@@ -993,6 +1004,7 @@ section {
     line-height: 1.14;
     letter-spacing: 0.03em;
     text-transform: uppercase;
+    text-align: start;
     color: var(--secondary-title-color);
     margin-bottom: 10px;
   }
@@ -1188,6 +1200,10 @@ section {
     flex-direction: row;
     flex-wrap: wrap;
   }
+}
+
+.team-title {
+  display: flex;
 }
 
 @media screen and (min-width: 480px) {
@@ -1402,9 +1418,11 @@ section {
 
 .container-customers {
   justify-content: center;
+  padding-top: 0;
 }
 
 .customers-tittle {
+  display: block;
   font-weight: bold;
   font-size: 36px;
   line-height: 1.17;

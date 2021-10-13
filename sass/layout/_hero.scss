@@ -5,10 +5,14 @@
     background-size: 100%;
     padding-top: 118px;
   padding-bottom: 118px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
   }
   @media screen and (min-width: 768px) {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),  url( ../img/header1x-min.jpg) 1x, url(../img/header1x-min.jpg) 2x;
-    background-size: 100%;
+    background-size: cover;
+  background-position: center;
     background-repeat: no-repeat;
     padding-top: 118px;
   padding-bottom: 118px;
@@ -17,6 +21,9 @@
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),  url(../img/fon-min.jpg);
     padding-top: 200px;
   padding-bottom: 200px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
   }
 }
 .hero__container {

@@ -12,6 +12,7 @@
     width: 100%;
     justify-content: space-between;
     padding-left: 40px;
+    margin-right: 0;
   }
   .header-navigation {
     @media screen and (min-width: 768px) {
@@ -138,13 +139,13 @@
     @media screen and (min-width: 768px) {
       margin-left: auto;
     display: flex;
-    
+    margin-bottom: 0;
     flex-direction: column;
     }
     @media screen and (min-width: 1200px) {
     margin-left: auto;
     display: flex;
-    
+    margin-right: 0;
     flex-direction: row;
   }
   }
@@ -211,7 +212,7 @@
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
-    
+   margin-bottom: 0;
     color: var(--main-text-color) ;
     width: 161px;
   justify-content: space-between;
