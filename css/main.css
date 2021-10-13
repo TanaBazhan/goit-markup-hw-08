@@ -1215,6 +1215,7 @@ section {
     text-align: center;
     letter-spacing: 0.03em;
     color: #212121;
+    justify-self: center;
     margin-bottom: 50px;
     transform: translateX(50%);
   }
