@@ -267,6 +267,7 @@ section {
 @media screen and (min-width: 768px) {
   .icon-tel,
   .icon-mail {
+    display: block;
     fill: currentColor;
   }
 }
@@ -275,6 +276,7 @@ section {
   .icon-tel,
   .icon-mail {
     fill: currentColor;
+    display: block;
   }
 }
 
